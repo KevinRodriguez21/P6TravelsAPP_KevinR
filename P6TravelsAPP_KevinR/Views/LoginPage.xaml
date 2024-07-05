@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P6TravelsAPP_KevinR.Views.LoginPage"
+             >
+    <VerticalStackLayout Padding="20,0,20,0">
+
+        <Entry x:Name="TxtUserName" Placeholder="Username/Email" Keyboard="Email" FontSize="25" />
+        <Entry x:Name="TxtPassword" Placeholder="Password" Keyboard="Text" FontSize="25" IsPassword="True"/>
+
+        <Button x:Name="BtnLogin" Text="LOGIN" BackgroundColor="Green"/>
+        
+
+    </VerticalStackLayout>
+</ContentPage>
