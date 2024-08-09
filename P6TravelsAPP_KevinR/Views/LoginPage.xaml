@@ -2,14 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="P6TravelsAPP_KevinR.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black"
+             BackgroundImageSource="apploginbg"
              >
-    <VerticalStackLayout Padding="20,0,20,0">
+    <VerticalStackLayout Padding="20,50,20,0" VerticalOptions="StartAndExpand">
 
-        <Entry x:Name="TxtUserName" Placeholder="Username/Email" Keyboard="Email" FontSize="25" />
-        <Entry x:Name="TxtPassword" Placeholder="Password" Keyboard="Text" FontSize="25" IsPassword="True"/>
+        <Image x:Name="ImgLogo" Source="logo" HeightRequest="250"/>
 
-        <Button x:Name="BtnLogin" Text="LOGIN" BackgroundColor="Green"/>
+        <Entry x:Name="TxtUserName" Margin="0,30,0,10" Placeholder="Username/Email" Keyboard="Email" FontSize="25" />
         
+        <Entry x:Name="TxtPassword" Placeholder="Password" Keyboard="Text" FontSize="25" IsPassword="True"/>
+        <Switch x:Name="SwshowPassword" IsToggled="False" Toggled="SwshowPassword_Toggled" />
+
+        <Button x:Name="BtnLogin" Text="LOGIN" BackgroundColor="Green" Margin="0,30,0,0"/>
+
+        <Button x:Name="BtnSignUp" Text="Sign up" Margin="0,20,0,0" Clicked="BtnSignUp_Clicked"/>
+
+        <Label x:Name="LblPasswordRecobery" Text="Password Recovery...."    HorizontalTextAlignment="End" />
 
     </VerticalStackLayout>
 </ContentPage>

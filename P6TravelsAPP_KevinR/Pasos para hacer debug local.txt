@@ -1,0 +1,13 @@
+﻿el emulador existe en un ambiente aislado de la red local, y usa un router virtual para poder tener internet.
+El api se publica localmente (localhost) y mediante el uso de Coveyor se puede publicar en la red local.
+
+Tenemos por lo tanto que consumir los recurso del api desde el APP en el emulador
+
+Pasos:
+1. Crear archivo xml con la seguridad de red. X
+
+2. Modificar AndroidManifest.xml X
+
+3. Modificar MainApplication.cs X
+
+Luego de esto creamos una ruta base para consumo del API local
